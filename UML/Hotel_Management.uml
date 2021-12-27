@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.booking_status</OriginalElement>
+  <nodes>
+    <node x="444.98611111111114" y="0.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.guest</node>
+    <node x="0.0" y="616.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.restaurant_coffeeshop</node>
+    <node x="903.9861111111111" y="0.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.staff_information</node>
+    <node x="613.7805555555556" y="791.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.cleaning_service</node>
+    <node x="286.0" y="594.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation_details</node>
+    <node x="309.5" y="824.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food_order</node>
+    <node x="656.6444444444445" y="594.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.people</node>
+    <node x="298.98611111111114" y="55.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room_type</node>
+    <node x="70.98611111111114" y="77.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room_status</node>
+    <node x="197.5" y="1008.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food_contains</node>
+    <node x="664.9861111111111" y="77.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.booking_status</node>
+    <node x="33.5" y="791.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food</node>
+    <node x="188.98611111111114" y="329.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room</node>
+    <node x="616.1444444444445" y="285.0">62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation_details" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation" relationship="REFERENCES">
+      <point x="63.0" y="-72.5" />
+      <point x="475.0" y="567.0" />
+      <point x="754.1444444444445" y="567.0" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation_details" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room" relationship="REFERENCES">
+      <point x="-63.0" y="-72.5" />
+      <point x="349.0" y="567.0" />
+      <point x="268.48611111111114" y="567.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.people" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation" relationship="REFERENCES">
+      <point x="0.0" y="-72.5" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room_status" relationship="REFERENCES">
+      <point x="-39.75" y="-83.5" />
+      <point x="228.73611111111114" y="259.0" />
+      <point x="174.98611111111114" y="259.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.restaurant_coffeeshop" relationship="REFERENCES">
+      <point x="0.0" y="-83.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.staff_information" relationship="REFERENCES">
+      <point x="92.0" y="-127.5" />
+      <point x="846.1444444444445" y="259.0" />
+      <point x="1010.4861111111111" y="259.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food_contains" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food_order" relationship="REFERENCES">
+      <point x="37.5" y="-50.5" />
+      <point x="310.0" y="983.0" />
+      <point x="412.0" y="983.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.cleaning_service" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation_details" relationship="REFERENCES">
+      <point x="-54.25" y="-83.5" />
+      <point x="668.0305555555556" y="765.0" />
+      <point x="412.0" y="765.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food_order" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation_details" relationship="REFERENCES">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.guest" relationship="REFERENCES">
+      <point x="-92.0" y="-127.5" />
+      <point x="662.1444444444445" y="259.0" />
+      <point x="544.9861111111111" y="259.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.reservation" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.booking_status" relationship="REFERENCES">
+      <point x="0.0" y="-127.5" />
+      <point x="754.1444444444445" y="259.0" />
+      <point x="774.4861111111111" y="259.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.cleaning_service" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.staff_information" relationship="REFERENCES">
+      <point x="54.25" y="-83.5" />
+      <point x="776.5305555555556" y="765.0" />
+      <point x="1010.4861111111111" y="765.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food_contains" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.food" relationship="REFERENCES">
+      <point x="-37.5" y="-50.5" />
+      <point x="235.0" y="983.0" />
+      <point x="133.0" y="983.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room" target="62935223-f83d-49f3-a15b-09fda226c052.TABLE:main.room_type" relationship="REFERENCES">
+      <point x="39.75" y="-83.5" />
+      <point x="308.23611111111114" y="259.0" />
+      <point x="361.98611111111114" y="259.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.1518157661647475" showDependencies="false" x="729.4198287998116" y="260.4425561365734" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
