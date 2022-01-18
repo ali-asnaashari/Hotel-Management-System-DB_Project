@@ -16,12 +16,15 @@
   <property name="windowTitle">
    <string>Free Rooms</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 238, 249);</string>
+  </property>
   <widget class="QDateEdit" name="FreeRooms_DateEditOne">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>240</x>
      <y>120</y>
-     <width>221</width>
+     <width>191</width>
      <height>51</height>
     </rect>
    </property>
@@ -40,9 +43,9 @@
   <widget class="QDateEdit" name="FreeRooms_DateEditTwo">
    <property name="geometry">
     <rect>
-     <x>650</x>
+     <x>680</x>
      <y>120</y>
-     <width>221</width>
+     <width>191</width>
      <height>51</height>
     </rect>
    </property>
@@ -61,9 +64,9 @@
   <widget class="QLabel" name="FreeRooms_From">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>60</x>
      <y>120</y>
-     <width>131</width>
+     <width>151</width>
      <height>51</height>
     </rect>
    </property>
@@ -85,7 +88,7 @@
     <enum>QFrame::Panel</enum>
    </property>
    <property name="text">
-    <string>From</string>
+    <string>CheckIn Date</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -94,9 +97,9 @@
   <widget class="QLabel" name="FreeRooms_To">
    <property name="geometry">
     <rect>
-     <x>490</x>
+     <x>500</x>
      <y>120</y>
-     <width>131</width>
+     <width>161</width>
      <height>51</height>
     </rect>
    </property>
@@ -118,7 +121,7 @@
     <enum>QFrame::Panel</enum>
    </property>
    <property name="text">
-    <string>To</string>
+    <string>CheckOut Date</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -160,10 +163,10 @@
   <widget class="QPushButton" name="SeeFreeRooms_B">
    <property name="geometry">
     <rect>
-     <x>910</x>
-     <y>120</y>
+     <x>870</x>
+     <y>310</y>
      <width>151</width>
-     <height>51</height>
+     <height>111</height>
     </rect>
    </property>
    <property name="font">
@@ -181,17 +184,20 @@
     <string notr="true">background-color: rgb(208, 209, 255);</string>
    </property>
    <property name="text">
-    <string>Enter</string>
+    <string>Show Room</string>
    </property>
   </widget>
   <widget class="QTableWidget" name="FreeRooms_TableWidget">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>60</x>
      <y>200</y>
-     <width>811</width>
+     <width>761</width>
      <height>451</height>
     </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <column>
     <property name="text">
@@ -305,6 +311,147 @@
      <set>AlignCenter</set>
     </property>
    </column>
+  </widget>
+  <widget class="QLineEdit" name="FreeRooms_Search_LE">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>770</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FreeRooms_Filter_PB">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>690</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(208, 209, 255);</string>
+   </property>
+   <property name="text">
+    <string>Filter</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="FreeRooms_Enter_RoomID_LE">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>770</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FreeRooms_Reserved_PB">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>690</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(208, 209, 255);</string>
+   </property>
+   <property name="text">
+    <string>Enter Rooms</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="FreeRooms_Enter_NumberOfNight_LE">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>770</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SeeFreeRooms_NumberOfNight_L">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>690</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 97, 100);</string>
+   </property>
+   <property name="text">
+    <string>Number Of Nights</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="margin">
+    <number>1</number>
+   </property>
   </widget>
  </widget>
  <resources/>
