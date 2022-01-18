@@ -193,7 +193,7 @@ class Ui_ReservedRoom(object):
 
 
 def read_room_ids() -> list:
-    f = open("room_ids.txt", "r")
+    f = open("File/room_ids.txt", "r")
     room_id = f.readline()
     lst = room_id.split(" ")
 

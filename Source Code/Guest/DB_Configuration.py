@@ -14,7 +14,7 @@ def exe_query(query):
 
 def read_user_details():
     detail = []
-    with open("GuestDetails.csv", "r") as csv_file:
+    with open("File/guest_details.csv", "r") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 
         for row in csv_reader:

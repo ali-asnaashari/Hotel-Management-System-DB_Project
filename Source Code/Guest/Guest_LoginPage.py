@@ -92,10 +92,8 @@ class Ui_loginPage(object):
                         Guest_Password = '{self.Login_password_LE.text()}' ; 
                    """)
 
-        # print(res[0])
-
         if len(res) != 0:
-            with open("GuestDetails.csv", "w") as File:
+            with open("File/guest_details.csv", "w") as File:
                 csv.register_dialect("custom", delimiter=",", skipinitialspace=True)
                 writer = csv.writer(File, dialect="custom")
                 writer.writerow(res[0])

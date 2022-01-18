@@ -359,7 +359,7 @@ class Ui_FreeRooms(object):
 
     def catch_room_ids(self):
         room_ids = self.FreeRooms_Enter_RoomID_LE.text().split(' ')
-        f = open("room_ids.txt", "w")
+        f = open("File/room_ids.txt", "w")
         for i in range(len(room_ids)):
             f.write(room_ids[i] + ' ')
         f.close()

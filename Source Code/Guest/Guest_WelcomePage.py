@@ -1,25 +1,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import csv
-
+from User.DB_Configuration import read_user_details
 from User.Guest_See_Empty_Rooms import Ui_FreeRooms
-
-detail = []
-
-
-def read_name_family():
-    with open("GuestDetails.csv", "r") as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=',')
-
-        for row in csv_reader:
-            detail.append(row[1])
-            detail.append(row[2])
-            break
-
-    return detail
+from User.Guest_See_Restaurant import Ui_See_Rest_window
 
 
 class Ui_GuestWelcomePage(object):
-    read_name_family()
 
     def setupUi(self, GuestWelcomePage):
         GuestWelcomePage.setObjectName("GuestWelcomePage")
@@ -119,7 +105,12 @@ class Ui_GuestWelcomePage(object):
         # See_Empty_Rooms_Clicked
         self.WelcomePage_FreeRoom_B.clicked.connect(self.Guest_See_Empty_Room_Window)
 
+        # See_Restaurant_Clicked
+        self.WelcomePage_SeeRestaurant_B.clicked.connect(self.Guest_See_Restaurant_Window)
+
     def retranslateUi(self, GuestWelcomePage):
+        user_detail = read_user_details()
+
         _translate = QtCore.QCoreApplication.translate
         GuestWelcomePage.setWindowTitle(_translate("GuestWelcomePage", "Guest Dashboard"))
         self.WelcomePage_TotalBilling_B.setText(_translate("GuestWelcomePage", "Total Billing"))
@@ -128,13 +119,19 @@ class Ui_GuestWelcomePage(object):
         self.WelcomePage_SeeRestaurant_B.setText(_translate("GuestWelcomePage", "See Restaurants"))
         self.WelcomePage_ListReservatons_B.setText(_translate("GuestWelcomePage", "List Of Reservations"))
         self.WelcomePage_CleaingOrder_B.setText(_translate("GuestWelcomePage", "Make Cleaning Order"))
-        self.WelcomePage_Enter_L.setText(_translate("GuestWelcomePage", "Welcome " + detail[0] + " " + detail[1] +
-                                                    " to Home Page"))
+        self.WelcomePage_Enter_L.setText(_translate("GuestWelcomePage", "Welcome " + user_detail[1] + " " +
+                                                    user_detail[2] + " to Home Page"))
 
         self.WelcomePage_TotalBilling_B_2.setText(_translate("GuestWelcomePage", "Exit"))
 
     def Guest_See_Empty_Room_Window(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_FreeRooms()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def Guest_See_Restaurant_Window(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_See_Rest_window()
         self.ui.setupUi(self.window)
         self.window.show()
