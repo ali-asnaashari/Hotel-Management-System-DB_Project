@@ -1,0 +1,1 @@
+pyuic5 Guest_WelcomePage.ui -o Guest_WelcomePage.py
