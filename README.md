@@ -1,25 +1,23 @@
 # Hotel-Management-System
 
-## Photos of parts of the program
-
 ### Starter
 <p align="center"> 
-  <img src="Image/starter.png">
+  <img src="images/starter.png">
 </p>
 
-### Admin
+### Admin Overview
 <p align="center"> 
-  <img src="Image/Admin.png">
+  <img src="images/Admin.png">
 </p>
 
-### Receptionist
+### Receptionist Overview
 <p align="center"> 
-  <img src="Image/Receptionist.png">
+  <img src="images/Receptionist.png">
 </p>
 
-### Receptionist
+### Guest Overview
 <p align="center"> 
-  <img src="Image/Guest.png">
+  <img src="images/Guest.png">
 </p>
 
 ## Installation
