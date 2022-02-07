@@ -2,22 +2,22 @@
 
 ### Starter
 <p align="center"> 
-  <img src="images/starter.png">
+  <img src="images/starter.PNG">
 </p>
 
 ### Admin Overview
 <p align="center"> 
-  <img src="images/Admin.png">
+  <img src="images/Admin.PNG">
 </p>
 
 ### Receptionist Overview
 <p align="center"> 
-  <img src="images/Receptionist.png">
+  <img src="images/Receptionist.PNG">
 </p>
 
 ### Guest Overview
 <p align="center"> 
-  <img src="images/Guest.png">
+  <img src="images/Guest.PNG">
 </p>
 
 ## Installation
